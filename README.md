@@ -1,6 +1,6 @@
-# Carl's 3D-verkstad
+# Swe-Print3D
 
-Carl's 3D-verkstad is a Next.js web application for uploading 3D printing files, getting instant price estimates, and ordering prints.\
+Swe-Print3D.se is a Next.js web application for uploading 3D printing files, getting instant price estimates, and ordering prints.\
 It supports lithophane cube previews, FDM price calculation, and a smooth checkout flow.
 
 ---
@@ -11,9 +11,6 @@ It supports lithophane cube previews, FDM price calculation, and a smooth checko
   - Supports STL and other common 3D printing formats.
   - Files are uploaded to the `/upload/` directory.
   - File-based price calculation before entering shipping details.
-- **Lithophane Cube Generator**
-  - Showcases what a lithophane cube is with an example image.
-  - Order lithophane cube with custom image uploads for a fixed price.
 - **Price Estimation**
   - Quick "Beräkna pris" (Calculate Price) button next to file upload.
 - **Responsive Design**
@@ -89,8 +86,5 @@ MIN_GRAMS_PER_FILE=6                # Minimum grams charged per file
 ---
 
 ## 📄 License
-
-Sharing this code with other 3D print providers will of course hurt my business by increased competition, though the open source community beats louder in my heart! Please show graitude by contributing with your own features to this repo, help me market [https://carls3d.se](https://carls3d.se) or include a link to this GitHub page on your own derivative of this web app! None of this is however required by the MIT License.
-
-MIT License © 2025 Carl's 3D-verkstad
+MIT License © 2025 Swe-Print3D
 
