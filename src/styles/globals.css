@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* System font stack for a clean default look */
+:root { color-scheme: light; }
+html, body { height: 100%; }
+body { @apply bg-gray-50 text-gray-800 antialiased; }
+
+a { @apply text-gray-800; }
+body {
+  @apply bg-gray-50 text-gray-800;
+}
+
+input, select, textarea {
+  @apply border rounded p-2;
+}
+
+button {
+  @apply rounded px-4 py-2;
+}

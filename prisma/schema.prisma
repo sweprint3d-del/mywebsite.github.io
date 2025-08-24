@@ -1,0 +1,49 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Order {
+  id           Int      @id @default(autoincrement())
+  orderNumber  String   @unique
+  name         String
+  email        String
+  type         String
+  price        Int
+  status       String
+
+  addressLine1 String
+  addressLine2 String?
+  postalCode   String
+  city         String
+  country      String
+  phone        String?
+
+  createdAt    DateTime @default(now())
+  files        OrderFile[]
+}
+
+
+model OrderFile {
+  id        Int    @id @default(autoincrement())
+  orderId   Int
+  filename  String
+  token     String @unique   // unikt fil-ID (t.ex. nanoid)
+
+  order     Order  @relation(fields: [orderId], references: [id], onDelete: Cascade)
+
+  @@index([orderId])
+}
+
+model Inventory {
+  id       Int    @id @default(autoincrement())
+  material String
+  color    String
+  available Boolean @default(true)
+
+  @@unique([material, color])
+}

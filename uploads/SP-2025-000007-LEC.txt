@@ -1,0 +1,14 @@
+Order: SP-2025-000007-LEC
+Namn: LEC
+E-post: lecanistuff@mail.com
+Adress: Letsegårdsvägen 73, 42740 Billdal, Sverige
+Telefon: 0723297762
+
+Objekt:
+- lhQxy-Sx2C  SP-2025-000007-LEC_hexDrawer_v1.1.stl  —  PLA/black × 1  (~6 g/ea)
+- 6ra2lNO0Lc  SP-2025-000007-LEC_hexDrawers_v1.2_bodyBraced.stl  —  PLA/white × 1  (~6 g/ea)
+
+Materialkostnad: 6 kr
+Filavgift: 10 kr
+Frakt: 44 kr
+Totalt: 60 kr

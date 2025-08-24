@@ -1,0 +1,16 @@
+{
+    "images": [
+      { "src": "dia.jpg", "caption": "En lampa i formen av ett Diamant-block från Minecraft" },
+      { "src": "ams.jpg", "caption": "Filamentrullar i AMS-systemet till skrivaren" },
+      { "src": "drawer.jpg", "caption": "Ett modulärt hexagoniskt sorteringssystem"},
+      { "src": "gungrip.jpg", "caption": "Handtag till en pistol i trä-PLA, under utskrivning"},
+      { "src": "gun.jpg", "caption": "Färdiglackade handtag i trä-PLA fastskruvade på en pistol"},
+      { "src": "keys.jpg", "caption": "Piltangenter till ett Logitech G915"},
+      { "src": "lamp.jpg", "caption": "En lithophane-kub med foton som sidor, tänd"},
+      { "src": "pegboard.jpg", "caption": "En håltavla med klätterutrustning sorterad på"},
+      { "src": "rpi.jpg", "caption": "En flerfärgad låda till den Raspberry Pi-datorn som kör den här hemsidan"},
+      { "src": "screw.jpg", "caption": "Ett hyllmonterat rack för skruvmejselkit från Clas Ohlson"},
+      { "src": "xzero.jpg", "caption": "Hylla för att förvara X-Zero-energidricka prydligt"}
+    ]
+  }
+  
