@@ -199,7 +199,11 @@
 
     <footer>
       <div>
-        <div class="logo">SwePrint3D</div>
+        <div class="brand">
+  <img src="SwePrint3D_Logo.jpg" alt="SwePrint3D-logotyp">
+  <div class="logo">SwePrint3D</div>
+</div>
+
         <div>3D-printade modeller & kit på beställning.</div>
       </div>
       <div>
