@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <title>SwePrint3D – 3D-printade modeller & kit</title>
+    <meta name="description" content="SwePrint3D erbjuder högkvalitativa 3D-printade modeller och kit, med fokus på unika beställningar och snabb, pålitlig service. Beställ färdiga modeller eller specialanpassade utskrifter.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: linear-gradient(to bottom, #ffffff, #f3f4f6);
+        color: #111827;
+      }
+      header, main, footer {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 1.5rem;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #e5e7eb;
+        background: #ffffffcc;
+        backdrop-filter: blur(8px);
+        position: sticky;
+        top: 0;
+      }
+      .logo {
+        font-weight: 700;
+        letter-spacing: 0.03em;
+      }
+      .chip {
+        display: inline-block;
+        padding: 0.35rem 0.75rem;
+        border-radius: 999px;
+        border: 1px solid #e5e7eb;
+        background: #fff;
+        font-size: 0.8rem;
+        color: #4b5563;
+        margin-top: 1rem;
+      }
+      h1 {
+        margin-top: 1.25rem;
+        font-size: 2rem;
+      }
+      .lead {
+        margin-top: 0.75rem;
+        max-width: 40rem;
+        color: #4b5563;
+      }
+      .btn-row {
+        margin-top: 1.25rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+      }
+      .btn {
+        padding: 0.6rem 1.3rem;
+        border-radius: 999px;
+        font-size: 0.9rem;
+        text-decoration: none;
+        display: inline-block;
+      }
+      .btn-primary {
+        background: #111827;
+        color: #fff;
+      }
+      .btn-outline {
+        border: 1px solid #d1d5db;
+        color: #111827;
+        background: #ffffffaa;
+      }
+      .cards {
+        margin-top: 2rem;
+        display: grid;
+        gap: 1rem;
+      }
+      @media (min-width: 768px) {
+        .cards {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+      }
+      .card {
+        background: #fff;
+        border-radius: 1rem;
+        border: 1px solid #e5e7eb;
+        padding: 1rem;
+        box-shadow: 0 1px 2px rgb(0 0 0 / 0.04);
+        font-size: 0.9rem;
+      }
+      h2 {
+        margin-top: 2rem;
+        font-size: 1.3rem;
+      }
+      .grid-2 {
+        margin-top: 1rem;
+        display: grid;
+        gap: 1rem;
+      }
+      @media (min-width: 768px) {
+        .grid-2 {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+      ul {
+        margin-top: 0.5rem;
+        padding-left: 1.1rem;
+        font-size: 0.9rem;
+        color: #4b5563;
+      }
+      footer {
+        margin-top: 2.5rem;
+        border-top: 1px solid #e5e7eb;
+        font-size: 0.85rem;
+        color: #6b7280;
+        display: grid;
+        gap: 0.75rem;
+      }
+      @media (min-width: 640px) {
+        footer {
+          grid-template-columns: 1.5fr 1.5fr 1fr;
+          align-items: flex-start;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">SwePrint3D</div>
+      <nav>
+        <a href="https://www.tradera.com/profile/items/1577517/sweprint3d">Tradera-butik</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="chip">🧵 3D-printade modeller & kit • PLA / PETG / ABS / ASA / TPU</div>
+      <h1>3D-utskrivna modeller & kit på beställning – SwePrint3D</h1>
+      <p class="lead">
+        3D-printade figurer, hjälmar, reservdelar och specialdelar. Fokus på snygga utskrifter,
+        bra passform och snabb, pålitlig service.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="https://www.tradera.com/profile/items/1577517/sweprint3d">Visa aktuella annonser på Tradera</a>
+        <a class="btn btn-outline" href="mailto:din-mail@exempel.se">Fråga om specialbeställning</a>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Färdiga modeller & kit</h3>
+          <p>Färdiga 3D-printade kit som du monterar själv – perfekt för samlare och hobbybyggare.</p>
+        </div>
+        <div class="card">
+          <h3>Specialbeställningar</h3>
+          <p>Har du en STL-fil eller en idé? Skicka en förfrågan så tittar vi på material, pris och leveranstid.</p>
+        </div>
+        <div class="card">
+          <h3>Erfaren säljare</h3>
+          <p>Över 15 år på Tradera med fokus på tydlig kommunikation, bra packning och smidig frakt.</p>
+        </div>
+      </div>
+
+      <h2>Material – vad passar ditt projekt?</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>PLA – standard & dekor</h3>
+          <ul>
+            <li>Lätt att skriva ut, många färger, bra ytfinish.</li>
+            <li>Passar figurer, inredning, prototyper, enklare reservdelar.</li>
+            <li>Bör inte stå i hög värme (bil, direkt sol).</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>PETG – slitstarkt & halvsegt</h3>
+          <ul>
+            <li>Mer slagtåligt än PLA och tål fukt bättre.</li>
+            <li>Bra till hållare, krokar, delar i kök/garage.</li>
+            <li>Fungerar utomhus inom rimliga temperaturer.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>ABS / ASA – värmetåligt</h3>
+          <ul>
+            <li>Tål högre temperatur och tuffare miljö.</li>
+            <li>För bil, motorutrymmen och utsatta delar.</li>
+            <li>ASA står emot sol/UV bättre än ABS.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>TPU – flexibelt (gummi-likt)</h3>
+          <ul>
+            <li>Böjligt och stötdämpande.</li>
+            <li>Passar skydd, fötter, packningar och remmar.</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        <div class="logo">SwePrint3D</div>
+        <div>3D-printade modeller & kit på beställning.</div>
+      </div>
+      <div>
+        <div><strong>E‑post:</strong> <a href="mailto:din-mail@exempel.se">din-mail@exempel.se</a></div>
+        <div>Frakt via t.ex. PostNord. Betalning enligt överenskommelse (t.ex. Swish).</div>
+        <div>Litet lager – vissa färger/material beställs vid behov.</div>
+      </div>
+      <div>
+        <div>© 2025 SwePrint3D</div>
+        <div><a href="https://www.tradera.com/profile/items/1577517/sweprint3d">Om & kontakt via Tradera</a></div>
+      </div>
+    </footer>
+  </body>
+</html>
