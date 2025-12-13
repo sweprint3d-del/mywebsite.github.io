@@ -135,6 +135,38 @@
         font-size: 0.9rem;
         color: #4b5563;
       }
+
+      /* GALLERI */
+      .gallery {
+        margin-top: 2rem;
+        display: grid;
+        gap: 1rem;
+      }
+
+      @media (min-width: 768px) {
+        .gallery {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+      }
+
+      .gallery figure {
+        background: #fff;
+        border-radius: 1rem;
+        border: 1px solid #e5e7eb;
+        padding: 0.75rem;
+        box-shadow: 0 1px 2px rgb(0 0 0 / 0.04);
+        margin: 0;
+        font-size: 0.85rem;
+        color: #4b5563;
+      }
+
+      .gallery img {
+        width: 100%;
+        border-radius: 0.75rem;
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+
       footer {
         margin-top: 2.5rem;
         border-top: 1px solid #e5e7eb;
@@ -163,7 +195,7 @@
     </header>
 
     <main>
-           <div class="chip">🧵 3D-printade modeller & kit • Beställning & specialjobb</div>
+      <div class="chip">🧵 3D-printade modeller & kit • Beställning & specialjobb</div>
       <h1>3D-print på beställning – från idé till färdig modell</h1>
       <p class="lead">
         SwePrint3D hjälper dig med figurer, hjälmar, reservdelar och specialdelar i PLA, PETG, ABS/ASA och TPU.
@@ -173,7 +205,6 @@
         <a class="btn btn-primary" href="mailto:sweprint3d@gmail.com">Begär offert på 3D‑print</a>
         <a class="btn btn-outline" href="https://www.tradera.com/profile/items/1577517/sweprint3d">Se färdiga modeller på Tradera</a>
       </div>
-
 
       <div class="cards">
         <div class="card">
@@ -258,36 +289,23 @@
         </ul>
         <p>Större modeller kan ibland delas upp i flera delar och monteras ihop – fråga gärna om din idé.</p>
       </section>
+
+      <h2>Galleri – exempel på utskrifter</h2>
+      <div class="gallery">
+        <figure>
+          <img src="uploads/print1.jpg" alt="3D-printad hjälm">
+          <figcaption>Hjälm i PLA, målad och monterad</figcaption>
+        </figure>
+        <figure>
+          <img src="uploads/print2.jpg" alt="3D-printad figur">
+          <figcaption>Figur i PLA för samling</figcaption>
+        </figure>
+        <figure>
+          <img src="uploads/print3.jpg" alt="3D-printad reservdel">
+          <figcaption>Reservdel i PETG för daglig användning</figcaption>
+        </figure>
+      </div>
     </main>
-.gallery {
-  margin-top: 2rem;
-  display: grid;
-  gap: 1rem;
-}
-
-@media (min-width: 768px) {
-  .gallery {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-
-.gallery figure {
-  background: #fff;
-  border-radius: 1rem;
-  border: 1px solid #e5e7eb;
-  padding: 0.75rem;
-  box-shadow: 0 1px 2px rgb(0 0 0 / 0.04);
-  margin: 0;
-  font-size: 0.85rem;
-  color: #4b5563;
-}
-
-.gallery img {
-  width: 100%;
-  border-radius: 0.75rem;
-  display: block;
-  margin-bottom: 0.5rem;
-}
 
     <footer>
       <div>
