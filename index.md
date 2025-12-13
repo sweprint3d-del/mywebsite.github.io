@@ -1,11 +1,362 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="refresh" content="0; url=/Sweprint3dmain.github.io/index.html">
-  <title>Redirect</title>
-</head>
-<body>
-  <p>Om du inte omdirigeras automatiskt, <a href="/Sweprint3dmain.github.io/index.html">klicka här</a>.</p>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>SwePrint3D – 3D-printade modeller & kit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: linear-gradient(to bottom, #ffffff, #f3f4f6);
+        color: #111827;
+      }
+
+      header, main, footer {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 1.5rem;
+      }
+
+      main {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #e5e7eb;
+        background: #ffffffcc;
+        backdrop-filter: blur(8px);
+        position: sticky;
+        top: 0;
+      }
+
+      header img {
+        height: 40px;
+        width: 40px;
+        border-radius: 0.5rem;
+        margin-right: 0.6rem;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      header nav a {
+        font-size: 0.9rem;
+        color: #4b5563;
+        text-decoration: none;
+        padding: 0.35rem 0.8rem;
+        border-radius: 999px;
+      }
+
+      header nav a:hover {
+        background: #f3f4f6;
+      }
+
+      .logo {
+        font-weight: 700;
+        letter-spacing: 0.03em;
+      }
+
+      .chip {
+        display: inline-block;
+        padding: 0.35rem 0.75rem;
+        border-radius: 999px;
+        border: 1px solid #e5e7eb;
+        background: #fff;
+        font-size: 0.8rem;
+        color: #4b5563;
+        margin-top: 1rem;
+      }
+
+      h1 {
+        margin-top: 1.25rem;
+        font-size: 2rem;
+      }
+
+      .lead {
+        margin-top: 0.75rem;
+        max-width: 40rem;
+        color: #4b5563;
+      }
+
+      .btn-row {
+        margin-top: 1.25rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+      }
+
+      .btn {
+        padding: 0.6rem 1.3rem;
+        border-radius: 999px;
+        font-size: 0.9rem;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .btn-primary {
+        background: #111827;
+        color: #fff;
+      }
+
+      .btn-outline {
+        border: 1px solid #d1d5db;
+        color: #111827;
+        background: #ffffffaa;
+      }
+
+      .cards {
+        margin-top: 2rem;
+        display: grid;
+        gap: 1rem;
+      }
+
+      @media (min-width: 768px) {
+        .cards {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+      }
+
+      .card {
+        background: #fff;
+        border-radius: 1rem;
+        border: 1px solid #e5e7eb;
+        padding: 1rem;
+        box-shadow: 0 1px 2px rgb(0 0 0 / 0.04);
+        font-size: 0.9rem;
+      }
+
+      h2 {
+        margin-top: 2rem;
+        font-size: 1.3rem;
+      }
+
+      .grid-2 {
+        margin-top: 1rem;
+        display: grid;
+        gap: 1rem;
+      }
+
+      @media (min-width: 768px) {
+        .grid-2 {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      ul {
+        margin-top: 0.5rem;
+        padding-left: 1.1rem;
+        font-size: 0.9rem;
+        color: #4b5563;
+      }
+
+      .gallery {
+        margin-top: 2rem;
+        display: grid;
+        gap: 1rem;
+      }
+
+      @media (min-width: 768px) {
+        .gallery {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+      }
+
+      .gallery figure {
+        background: #fff;
+        border-radius: 1rem;
+        border: 1px solid #e5e7eb;
+        padding: 0.75rem;
+        box-shadow: 0 1px 2px rgb(0 0 0 / 0.04);
+        margin: 0;
+        font-size: 0.85rem;
+        color: #4b5563;
+      }
+
+      .gallery img {
+        width: 100%;
+        border-radius: 0.75rem;
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+
+      footer {
+        margin-top: 2.5rem;
+        border-top: 1px solid #e5e7eb;
+        font-size: 0.85rem;
+        color: #6b7280;
+        display: grid;
+        gap: 0.75rem;
+      }
+
+      @media (min-width: 640px) {
+        footer {
+          grid-template-columns: 1.5fr 1.5fr 1fr;
+          align-items: flex-start;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="brand">
+        <div class="logo">SwePrint3D</div>
+      </div>
+      <nav>
+        <a href="https://www.tradera.com/profile/items/1577517/sweprint3d">Tradera-butik</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="chip">🧵 3D-printade modeller & kit • Beställning & specialjobb</div>
+
+      <h1>3D-print på beställning – från idé till färdig modell</h1>
+
+      <p class="lead">
+        SwePrint3D hjälper dig med figurer, hjälmar, reservdelar och specialdelar i PLA, PETG, ABS/ASA och TPU.
+        Fokus på snygga utskrifter, bra passform och snabb, pålitlig service.
+      </p>
+
+      <div class="btn-row">
+        <a class="btn btn-primary" href="mailto:sweprint3d@gmail.com">Begär offert på 3D‑print</a>
+        <a class="btn btn-outline" href="https://www.tradera.com/profile/items/1577517/sweprint3d">Se färdiga modeller på Tradera</a>
+      </div>
+
+      <section class="cards">
+        <article class="card">
+          <h3>Färdiga modeller & kit</h3>
+          <p>Färdiga 3D-printade kit som du monterar själv – perfekt för samlare och hobbybyggare.</p>
+        </article>
+        <article class="card">
+          <h3>Specialbeställningar</h3>
+          <p>Har du en STL-fil eller en idé? Skicka en förfrågan så tittar vi på material, pris och leveranstid.</p>
+        </article>
+        <article class="card">
+          <h3>Erfaren säljare</h3>
+          <p>Över 15 år på Tradera med fokus på tydlig kommunikation, bra packning och smidig frakt.</p>
+        </article>
+      </section>
+
+      <section>
+        <h2>Material – vad passar ditt projekt?</h2>
+        <div class="grid-2">
+          <div>
+            <h3>PLA – standard & dekor</h3>
+            <ul>
+              <li>Lätt att skriva ut, många färger, bra ytfinish.</li>
+              <li>Passar figurer, inredning, prototyper, enklare reservdelar.</li>
+              <li>Bör inte stå i hög värme (bil, direkt sol).</li>
+            </ul>
+
+            <h3>PETG – slitstarkt & halvsegt</h3>
+            <ul>
+              <li>Mer slagtåligt än PLA och tål fukt bättre.</li>
+              <li>Bra till hållare, krokar, delar i kök/garage.</li>
+              <li>Fungerar utomhus inom rimliga temperaturer.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>ABS / ASA – värmetåligt</h3>
+            <ul>
+              <li>Tål högre temperatur och tuffare miljö.</li>
+              <li>För bil, motorutrymmen och utsatta delar.</li>
+              <li>ASA står emot sol/UV bättre än ABS.</li>
+            </ul>
+
+            <h3>TPU – flexibelt (gummi-likt)</h3>
+            <ul>
+              <li>Böjligt och stötdämpande.</li>
+              <li>Passar skydd, fötter, packningar och remmar.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Så funkar det att beställa</h2>
+        <div class="grid-2">
+          <div>
+            <h3>1. Hitta modell eller kontakta mig</h3>
+            <ul>
+              <li>Hitta något du gillar i Tradera-butiken eller skicka din STL-fil.</li>
+              <li>Osäker? Beskriv vad du är ute efter så kan jag komme med förslag.</li>
+            </ul>
+
+            <h3>2. Material, färg & pris</h3>
+            <ul>
+              <li>Vi väljer material (PLA, PETG, ABS/ASA, TPU) efter användning.</li>
+              <li>Du får pris, ungefärlig leveranstid och eventuella alternativ.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>3. Utskrift & leverans</h3>
+            <ul>
+              <li>Jag skriver ut, packar och skickar spårbart där det är möjligt.</li>
+              <li>Betalning enligt överenskommelse, t.ex. Swish.</li>
+            </ul>
+
+            <h3>Byggvolym & skrivare</h3>
+            <ul>
+              <li>Bambu Lab P1S – maximal byggvolym: 256 × 256 × 256 mm</li>
+              <li>Creality K1 Max – maximal byggvolym: 300 × 300 × 300 mm</li>
+              <li>Större modeller kan delas upp i flera delar och monteras ihop.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Galleri – exempel på utskrifter</h2>
+        <div class="gallery">
+          <figure>
+            <img src="bilder/2024-10-25_gveaqgb5ys2l.jpg"
+                 alt="3D-printad hjälm från SwePrint3D">
+            <figcaption>Hjälm i PLA, målad och monterad.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="bilder/100031716.jpg"
+                 alt="3D-printad modell i PLA">
+            <figcaption>Figur i PLA för samling.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="bilder/DSC_7350_e444f43c-ad02-4962-8742-ef9fcc967808.jpg"
+                 alt="3D-printad reservdel i PETG">
+            <figcaption>Reservdel i PETG för daglig användning.</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <strong>SwePrint3D</strong><br>
+        3D-printade modeller & kit på beställning.
+      </div>
+      <div>
+        <strong>Kontakt</strong><br>
+        E‑post: <a href="mailto:sweprint3d@gmail.com">sweprint3d@gmail.com</a><br>
+        Frakt via t.ex. PostNord. Betalning enligt överenskommelse (t.ex. Swish).<br>
+        Litet lager – vissa färger/material beställs vid behov.
+      </div>
+      <div>
+        © 2025 SwePrint3D<br>
+        <a href="https://www.tradera.com/profile/items/1577517/sweprint3d">
+          Om & kontakt via Tradera
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>
