@@ -259,6 +259,35 @@
         <p>Större modeller kan ibland delas upp i flera delar och monteras ihop – fråga gärna om din idé.</p>
       </section>
     </main>
+.gallery {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.gallery figure {
+  background: #fff;
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+  padding: 0.75rem;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.04);
+  margin: 0;
+  font-size: 0.85rem;
+  color: #4b5563;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 0.75rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
 
     <footer>
       <div>
