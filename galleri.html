@@ -1,50 +1,129 @@
-<head>
-  <meta charset="utf-8">
-  <title>Galleri – SwePrint3D</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    .gallery {
-      margin-top: 2rem;
-      display: grid;
-      gap: 2rem;
-    }
-
-    @media (min-width: 640px) {
-      .gallery {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <title>Galleri – SwePrint3D</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f3f4f6;
+        color: #111827;
       }
-    }
 
-    @media (min-width: 1024px) {
-      .gallery {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+      main {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 2rem 1.5rem 3rem;
       }
-    }
 
-    .gallery figure {
-      margin: 0;
-      background: #ffffff;
-      border-radius: 1.25rem;
-      border: 1px solid #e5e7eb;
-      padding: 1rem;
-      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+      }
 
-    .gallery img {
-      width: 100%;
-      border-radius: 0.9rem;
-      display: block;
-    }
+      p {
+        margin: 0 0 1rem;
+      }
 
-    .gallery figcaption {
-      font-size: 0.9rem;
-      line-height: 1.5;
-      color: #4b5563;
-    }
-  </style>
-</head>
+      a {
+        color: #2563eb;
+        text-decoration: none;
+      }
 
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .back-link {
+        display: inline-block;
+        margin-bottom: 1.5rem;
+      }
+
+      .gallery {
+        margin-top: 2rem;
+        display: grid;
+        gap: 2rem;
+      }
+
+      /* 1 kolumn på mobil, 2 på tablet, 3 på desktop */
+      @media (min-width: 640px) {
+        .gallery {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .gallery {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+      }
+
+      .gallery figure {
+        margin: 0;
+        background: #ffffff;
+        border-radius: 1.25rem;
+        border: 1px solid #e5e7eb;
+        padding: 1rem;
+        box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+
+      .gallery img {
+        width: 100%;
+        border-radius: 0.9rem;
+        display: block;
+      }
+
+      .gallery figcaption {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        color: #4b5563;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a class="back-link" href="index.html">← Tillbaka till startsidan</a>
+      <h1>Galleri – fler exempel på utskrifter</h1>
+      <p>Här kan du se fler hjälmar, figurer och specialdelar som skrivits ut hos SwePrint3D.</p>
+
+      <div class="gallery">
+        <!-- Vas / kruka -->
+        <figure>
+          <img src="bilder/IMG_1622.jpeg" alt="3D-printad vas eller kruka som dekoration">
+          <figcaption>3D‑printad vas/kruka som inredningsdetalj – visar hur dekorativa objekt kan tas fram efter önskat mönster och storlek.</figcaption>
+        </figure>
+
+        <!-- Formel 1-kalender -->
+        <figure>
+          <img src="bilder/IMG_0210 2.jpeg" alt="3D-printad Formel 1-kalender för 2025">
+          <figcaption>Formel 1‑kalender för säsongen 2025, 3D‑printad som väggdekoration där alla race och datum finns samlade.</figcaption>
+        </figure>
+
+        <!-- Traktor byggsats -->
+        <figure>
+          <img src="bilder/a2f35160-d9d2-11f0-82f5-459ad961a1b8.jpg" alt="3D-printad traktor som byggsats">
+          <figcaption>3D‑printad traktor som byggsats – skrivs ut i flera delar och monteras ihop till en detaljerad modell, perfekt för både lek och display.</figcaption>
+        </figure>
+
+        <!-- Wolverine – delar / batch -->
+        <figure>
+          <img src="bilder/609789332_5b3a8c80-3ea2-46a1-9f37-ec6ed4edfd14.jpg" alt="3D-printade delar till Wolverine-hjälm eller specialfästen">
+          <figcaption>Batch‑utskrift av flera delar i ett jobb – effektivt när du behöver många likadana komponenter eller hjälmdelar samtidigt.</figcaption>
+        </figure>
+
+        <!-- Wolverine – detaljer -->
+        <figure>
+          <img src="bilder/609789332_6cedbd82-125b-4d1f-bf1f-47004d8da931.jpg" alt="Wolverine-hjälm 3D-printad, närbild på detaljer">
+          <figcaption>Detaljbild på Wolverine‑hjälm inspirerad av Deadpool 3 – visar skarpa linjer, rena skarvar och jämn yta efter efterarbete.</figcaption>
+        </figure>
+
+        <!-- Wolverine – display -->
+        <figure>
+          <
