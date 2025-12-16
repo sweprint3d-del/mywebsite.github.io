@@ -1,3 +1,37 @@
+.gallery {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.gallery figure {
+  margin: 0;
+  background: #ffffff;
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+  padding: 1rem;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 0.75rem;
+  display: block;
+}
+
+.gallery figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+
 <div class="gallery">
   <figure>
     <img src="bilder/IMG_1622.jpeg" alt="3D-printad reservdel eller fäste">
