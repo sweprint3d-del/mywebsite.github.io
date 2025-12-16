@@ -4,8 +4,163 @@
     <meta charset="utf-8">
     <title>Priser & vanliga frågor – SwePrint3D</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- samma CSS som index, nedkortat här för tydlighet -->
-    ...
+
+    <style>
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: linear-gradient(to bottom, #ffffff, #f3f4f6);
+        color: #111827;
+      }
+
+      header, main, footer {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 1.5rem;
+      }
+
+      main {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #e5e7eb;
+        background: #ffffffcc;
+        backdrop-filter: blur(8px);
+        position: sticky;
+        top: 0;
+      }
+
+      header img {
+        height: 40px;
+        width: 40px;
+        border-radius: 0.5rem;
+        margin-right: 0.6rem;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      header nav a {
+        font-size: 0.9rem;
+        color: #4b5563;
+        text-decoration: none;
+        padding: 0.35rem 0.8rem;
+        border-radius: 999px;
+      }
+
+      header nav a:hover {
+        background: #f3f4f6;
+      }
+
+      .logo {
+        font-weight: 700;
+        letter-spacing: 0.03em;
+      }
+
+      h1 {
+        margin-top: 1.25rem;
+        font-size: 2rem;
+      }
+
+      h2 {
+        margin-top: 2rem;
+        font-size: 1.3rem;
+      }
+
+      h3 {
+        margin-top: 0.75rem;
+        font-size: 1rem;
+      }
+
+      .lead {
+        margin-top: 0.75rem;
+        max-width: 40rem;
+        color: #4b5563;
+      }
+
+      ul {
+        margin-top: 0.5rem;
+        padding-left: 1.1rem;
+        font-size: 0.9rem;
+        color: #4b5563;
+      }
+
+      .grid-2 {
+        margin-top: 1rem;
+        display: grid;
+        gap: 1rem;
+      }
+
+      @media (min-width: 768px) {
+        .grid-2 {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      .btn {
+        padding: 0.6rem 1.3rem;
+        border-radius: 999px;
+        font-size: 0.9rem;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .btn-primary {
+        background: #111827;
+        color: #fff;
+      }
+
+      .faq-item {
+        margin-top: 1rem;
+        padding: 0.75rem 1rem;
+        background: #fff;
+        border-radius: 0.75rem;
+        border: 1px solid #e5e7eb;
+        font-size: 0.9rem;
+      }
+
+      figure {
+        margin: 1.5rem 0;
+        background: #fff;
+        border-radius: 1rem;
+        border: 1px solid #e5e7eb;
+        padding: 0.75rem;
+        box-shadow: 0 1px 2px rgb(0 0 0 / 0.04);
+        font-size: 0.85rem;
+        color: #4b5563;
+      }
+
+      figure img {
+        width: 100%;
+        border-radius: 0.75rem;
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+
+      footer {
+        margin-top: 2.5rem;
+        border-top: 1px solid #e5e7eb;
+        font-size: 0.85rem;
+        color: #6b7280;
+        display: grid;
+        gap: 0.75rem;
+      }
+
+      @media (min-width: 640px) {
+        footer {
+          grid-template-columns: 1.5fr 1.5fr 1fr;
+          align-items: flex-start;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -22,13 +177,195 @@
     </header>
 
     <main>
-      <!-- sektioner: Hur priset räknas ut, Prisexempel, Om SwePrint3D & maskinerna,
-           Cosplay & större projekt (med halo_rustning_massa.jpg), FAQ, Kontakt -->
-      ...
+      <h1>Priser & vanliga frågor</h1>
+      <p class="lead">
+        Här hittar du ungefärliga prisnivåer och svar på vanliga frågor om beställning, material och leverans.
+        För exakt pris behövs alltid din modell (STL eller länk) och önskad storlek. [web:164][web:175]
+      </p>
+
+      <section>
+        <h2>Hur priset räknas ut</h2>
+        <p>
+          Priset på en 3D‑print beror framför allt på tre saker: material, printtid och enklare efterarbete. [web:164]
+        </p>
+        <ul>
+          <li><strong>Material:</strong> vilken plast som används (PLA, PETG, ABS/ASA eller TPU) och hur många gram som går åt. [web:164]</li>
+          <li><strong>Printtid:</strong> hur länge skrivaren behöver gå – större och mer detaljerade modeller tar längre tid. [web:164][web:175]</li>
+          <li><strong>Efterarbete:</strong> borttagning av stöd, lätt grundslipning och montering av delar vid behov.</li>
+        </ul>
+        <p>
+          När du skickar STL‑fil eller modell‑länk får du alltid ett prisförslag och uppskattad leveranstid innan utskriften startar. [web:164][web:281]
+        </p>
+      </section>
+
+      <section>
+        <h2>Prisexempel (ca‑nivåer)</h2>
+        <div class="grid-2">
+          <div>
+            <h3>Mindre delar & hållare</h3>
+            <ul>
+              <li>Små fästen, batterihållare eller brackets i PLA eller PETG.</li>
+              <li>Ofta någon till några timmars printtid.</li>
+              <li>Vanligtvis ett totalpris på några hundralappar beroende på storlek och material.</li>
+            </ul>
+
+            <h3>Figurer & displayobjekt</h3>
+            <ul>
+              <li>Stående figurer, byster eller detaljerade modeller för hylla/vitrin.</li>
+              <li>Prisnivån beror mycket på storlek och detaljgrad.</li>
+              <li>Typiskt spann från några hundralappar upp mot runt tusenlappen för större figurer. [web:174]</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Hjälmar & större delar</h3>
+            <ul>
+              <li>Hjälmar för cosplay eller större delar som skrivs ut i flera sektioner.</li>
+              <li>Redo för egen slipning, spackling och målning.</li>
+              <li>Vanligt totalspann från cirka 1 000 till 2 000 kr beroende på modell och materialåtgång. [web:165][web:156]</li>
+            </ul>
+
+            <h3>Småserier / flera exemplar</h3>
+            <ul>
+              <li>Flera likadana delar kan bli billigare per styck än enstaka utskrifter. [web:164]</li>
+              <li>Passar om du vill testa en produktidé eller fylla upp en verktygsvägg.</li>
+              <li>Be gärna om offert om du planerar fler exemplar direkt.</li>
+            </ul>
+          </div>
+        </div>
+        <p>
+          Alla priser är ungefärliga exempel och inte fasta listpriser – varje jobb räknas fram efter just din modell. [web:164][web:175]
+        </p>
+      </section>
+
+      <section>
+        <h2>Om SwePrint3D & maskinerna</h2>
+        <div class="grid-2">
+          <div>
+            <h3>Om tjänsten</h3>
+            <p>
+              SwePrint3D är en liten, hobbybaserad 3D‑verkstad som drivs vid sidan av vanligt jobb.
+              Fokus ligger på snygga, pålitliga utskrifter och personlig kontakt snarare än massproduktion. [file:1]
+            </p>
+            <p>
+              Det gör att varje projekt kan anpassas – från små praktiska detaljer till större cosplay‑delar och displayobjekt. [file:1]
+            </p>
+          </div>
+          <div>
+            <h3>Maskiner & material</h3>
+            <ul>
+              <li>Bambu Lab P1S – byggvolym 256 × 256 × 256 mm.</li>
+              <li>Creality K1 Max – byggvolym 300 × 300 × 300 mm.</li>
+              <li>Vanliga material: PLA, PETG, ABS/ASA och TPU för allt från figurer till mer krävande delar. [file:1][web:278]</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Cosplay & större projekt</h2>
+        <p>
+          3D‑print lämpar sig väldigt bra för hjälmar, rustningsdelar och props till cosplay, där flera delar kan skrivas ut, passas in och sedan målas. [web:266][web:258]
+        </p>
+        <figure>
+          <img src="bilder/halo_rustning_massa.jpg" alt="Cosplaygrupp med Halo-rustning och 3D-printade delar">
+          <figcaption>
+            Exempel från en mässa där flera dräkter är byggda med 3D‑printade delar.
+            Den blå rustningen i mitten är ett Halo‑bygge där SwePrint3D stått för 3D‑utskrifterna, medan målning och montering gjorts av ägaren själv. [image:1]
+          </figcaption>
+        </figure>
+        <p>
+          Upplägget är oftast att SwePrint3D levererar utskrivna delar anpassade för slipning, spackling och målning, och att du eller din cosplaybyggare står för finish och passform. [web:266]
+        </p>
+      </section>
+
+      <section>
+        <h2>Vanliga frågor (FAQ)</h2>
+
+        <div class="faq-item">
+          <h3>Hur får jag ett exakt pris?</h3>
+          <p>
+            Skicka STL‑fil eller en länk till modellen (till exempel från Printables eller Thingiverse),
+            skriv vilken storlek du tänker dig och vilket material du föredrar. Du får sedan ett prisförslag innan något skrivs ut. [web:279][web:281]
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Gör du målning och full finish?</h3>
+          <p>
+            Fokus ligger på själva utskriften samt enklare efterarbete som borttagning av stöd och grundslipning.
+            Målning, spackling och detaljfinish brukar du själv eller din byggare stå för. [web:281]
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Kan du hjälpa mig hitta en modell?</h3>
+          <p>
+            Om du beskriver vad du är ute efter kan det ibland ges tips på vart liknande modeller brukar finnas,
+            men själva 3D‑filerna säljs inte vidare utan beställs separat av dig där de finns. [web:276][web:283]
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Finns det någon minsta beställning?</h3>
+          <p>
+            Mycket små enstaka delar kan bli relativt dyra i förhållande till tiden som krävs.
+            Om din idé ligger väldigt lågt i pris diskuteras det innan beställningen så att det känns rimligt för båda. [web:286]
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Hur lång är leveranstiden?</h3>
+          <p>
+            Leveranstiden beror på kö, storlek på modellen och vilket material som används.
+            Mindre jobb brukar fås iväg inom någon vecka, medan större projekt kan ta längre tid. [web:281][web:249]
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Hur skickas och betalas beställningar?</h3>
+          <p>
+            Försändelser skickas normalt spårbart via till exempel PostNord, packade ordentligt med skydd runt modellen.
+            Betalning sker enligt överenskommelse, ofta via Swish. [file:1][web:249]
+          </p>
+        </div>
+
+        <p style="margin-top: 1rem;">
+          Har du en fråga som inte finns med här? Skicka gärna ett mail så kan svaret läggas till i listan framöver. [web:281]
+        </p>
+      </section>
+
+      <section>
+        <h2>Kontakta SwePrint3D</h2>
+        <p>
+          För offert eller frågor, maila gärna en kort beskrivning av ditt projekt tillsammans med STL‑fil eller modell‑länk.
+        </p>
+        <p>
+          E‑post:
+          <a href="mailto:sweprint3d@gmail.com?subject=Offertförfr%C3%A5gan%203D-print">
+            sweprint3d@gmail.com
+          </a>
+        </p>
+      </section>
     </main>
 
     <footer>
-      ...
+      <div>
+        <strong>SwePrint3D</strong><br>
+        3D‑printade modeller & kit på beställning.
+      </div>
+      <div>
+        <strong>Kontakt</strong><br>
+        E‑post: <a href="mailto:sweprint3d@gmail.com">sweprint3d@gmail.com</a><br>
+        Frakt via till exempel PostNord. Betalning enligt överenskommelse (till exempel Swish).<br>
+        Litet lager – vissa färger och material beställs vid behov. [file:1]
+      </div>
+      <div>
+        © 2025 SwePrint3D<br>
+        <a href="https://www.tradera.com/profile/items/1577517/sweprint3d">
+          Om & kontakt via Tradera
+        </a>
+      </div>
     </footer>
   </body>
 </html>
